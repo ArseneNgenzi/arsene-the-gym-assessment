@@ -1,0 +1,65 @@
+$base-color: #c30a17;
+
+body {
+    background-color: #333;
+    .card {
+        background-color: #fff;
+        background-image: url("./img/testimage.jpeg");
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 7px solid #fff;
+        position: relative;
+        min-height: 4.4rem;
+        // transition: all .3s ease-in-out;
+        // z-index: 2;
+
+        .card-data {
+            user-select: none;
+            background-color: transparent;
+            color: #fff;
+            position: absolute;
+            display: block;
+            z-index: 1;
+            overflow: hidden;
+            // height: 100%;
+            height: inherit;
+            padding: 0;
+            top: 156px;
+            width: 100%;
+            transition: top .3s ease-in-out, background-color .5s ease-in-out;
+            // top: 0;
+            // bottom: -120px;
+            .card-data-title {
+                background-color: $base-color;
+                text-align: center;
+                padding: 0.8rem;
+                &:hover {
+                    background-color: ($base-color, 0.8);
+                }
+            }
+            .card-data-content {
+                padding: 0.5rem;
+                display: none;
+                transition: 10000s ease-in-out;
+                // background: transparent;
+                p a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        &:hover {
+
+            .card-data {
+                top: 0;
+                background-color: #3a3e41;
+                .card-data-content {
+                    display: block;
+                }
+            }
+        }
+    }
+}
