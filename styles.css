@@ -1,55 +1,5 @@
-body {
-  background-color: #333;
-}
-body .card {
-  background-color: #fff;
-  background-image: url("./img/testimage.jpeg");
-  height: 200px;
-  width: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 7px solid #fff;
-  position: relative;
-  min-height: 4.4rem;
-}
-body .card .card-data {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: transparent;
-  color: #fff;
-  position: absolute;
-  display: block;
-  z-index: 1;
-  overflow: hidden;
-  height: inherit;
+* {
+  margin: 0;
   padding: 0;
-  top: 156px;
-  width: 100%;
-  transition: top 0.3s ease-in-out, background-color 0.5s ease-in-out;
-}
-body .card .card-data .card-data-title {
-  background-color: #c30a17;
-  text-align: center;
-  padding: 0.8rem;
-}
-body .card .card-data .card-data-title:hover {
-  background-color: #c30a17, 0.8;
-}
-body .card .card-data .card-data-content {
-  padding: 0.5rem;
-  display: none;
-  transition: 10000s ease-in-out;
-}
-body .card .card-data .card-data-content p a {
-  color: #fff;
-  text-decoration: none;
-}
-body .card:hover .card-data {
-  top: 0;
-  background-color: #3a3e41;
-}
-body .card:hover .card-data .card-data-content {
-  display: block;
+  box-sizing: border-box;
 }/*# sourceMappingURL=styles.css.map */
