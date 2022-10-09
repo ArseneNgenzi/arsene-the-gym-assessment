@@ -187,6 +187,9 @@ body {
             }
 
             .navigation-main {
+                @media (max-width: 1024px) {
+                    display: none;
+                }
                 width: 100%;
                 ul {
                     display: flex;
@@ -206,3 +209,71 @@ body {
         }
     }
 }
+
+
+.carousel-data {
+    position: relative;
+
+    img {
+        z-index: 0;
+    }
+
+    .carousel-words {
+        position: absolute;
+        z-index: 20;
+        top: 3rem;
+        left: 5rem;
+        padding: 3rem;
+        color: #fff;
+        h1 {
+            font-size: 4rem;
+            // text-decoration: underline $green_color;
+            padding-bottom: 0.6rem;
+            border-bottom: 5px solid $green_color;
+        }
+    }
+}
+
+
+.right-below-carousel{
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    .scientists-students {
+        display: flex;
+        justify-content: space-between;
+
+        .scientists, .students {
+            display: flex;
+            justify-content: space-between;
+            border: 3px solid ;
+            border-radius: 0 10px 0 10px;
+            padding: 1rem;
+            width: 48%;
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .search-below-carousel {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+        margin-top: 2rem;
+        .all-input {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #000;
+            border-radius: 0 10px 0 10px;
+            padding: 1rem;
+            border: 3px solid ;
+
+            input {
+                background-color: #000;
+                border: 0;
+            }
+        }
+    }
+} 

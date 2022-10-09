@@ -179,6 +179,11 @@ body {
 .web-header .header-wrapper .nav .navigation-main {
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .web-header .header-wrapper .nav .navigation-main {
+    display: none;
+  }
+}
 .web-header .header-wrapper .nav .navigation-main ul {
   display: flex;
   justify-content: flex-end;
@@ -192,4 +197,66 @@ body {
 }
 .web-header .header-wrapper .nav .navigation-main ul li img {
   width: 1.5em;
+}
+
+.carousel-data {
+  position: relative;
+}
+.carousel-data img {
+  z-index: 0;
+}
+.carousel-data .carousel-words {
+  position: absolute;
+  z-index: 20;
+  top: 3rem;
+  left: 5rem;
+  padding: 3rem;
+  color: #fff;
+}
+.carousel-data .carousel-words h1 {
+  font-size: 4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 5px solid #007755;
+}
+
+.right-below-carousel {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+.right-below-carousel .scientists-students {
+  display: flex;
+  justify-content: space-between;
+}
+.right-below-carousel .scientists-students .scientists, .right-below-carousel .scientists-students .students {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid;
+  border-radius: 0 10px 0 10px;
+  padding: 1rem;
+  width: 48%;
+}
+.right-below-carousel .scientists-students .scientists h1, .right-below-carousel .scientists-students .students h1 {
+  font-size: 1.5em;
+}
+.right-below-carousel .search-below-carousel {
+  margin-top: 2rem;
+}
+@media (max-width: 1024px) {
+  .right-below-carousel .search-below-carousel {
+    display: none;
+  }
+}
+.right-below-carousel .search-below-carousel .all-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000;
+  border-radius: 0 10px 0 10px;
+  padding: 1rem;
+  border: 3px solid;
+}
+.right-below-carousel .search-below-carousel .all-input input {
+  background-color: #000;
+  border: 0;
 }/*# sourceMappingURL=styles.css.map */
