@@ -277,3 +277,23 @@ body {
         }
     }
 } 
+
+.news {
+    padding: 4rem;
+    .news-h1 {
+        border-bottom: 2px solid $green_color;
+        padding-bottom: 2rem;
+        width: fit-content;
+    }
+
+    .news-cards {
+        display: flex;
+        .news-card {
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

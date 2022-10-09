@@ -259,4 +259,24 @@ body {
 .right-below-carousel .search-below-carousel .all-input input {
   background-color: #000;
   border: 0;
+}
+
+.news {
+  padding: 4rem;
+}
+.news .news-h1 {
+  border-bottom: 2px solid #007755;
+  padding-bottom: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.news .news-cards {
+  display: flex;
+}
+.news .news-cards .news-card {
+  width: 20%;
+}
+.news .news-cards .news-card img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
